@@ -6,18 +6,18 @@ html {
   box-sizing: inherit;  
 }
 
-main{
+main {
     box-sizing: content-box;
 }
 
 
 @font-face {
-    src: url(fonts/Dosis-VariableFont_wght);
-    font-family: dosis;
+    src: url(assets/Raleway-VariableFont_wght);
+    font-family: Raleway;
 }
 
 h1{
-    font-family: dosis;
+    font-family:Raleway;
     color: blue;
 
 }
