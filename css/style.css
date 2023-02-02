@@ -1,3 +1,15 @@
+@font-face {
+    src: url(fonts/Dosis-VariableFont_wght);
+    font-family: dosis;
+}
+
+h1{
+    font-family: dosis;
+    color: blue;
+
+}
+
+
 .div1 {
 width: 300px;
 height: 100px;
