@@ -23,19 +23,11 @@ h1{
 }
 
 
-.div1 {
-width: 300px;
-height: 100px;
-border: 1px solid blue;
-margin: 5px;
-box-sizing: border-box;
-}
+.logo1{
+    width: 200px;
+    height: 100px; 
+    padding: 5px;
+    margin: auto;
+    box-sizing: border-box;
 
-.div2 {
-    width: 300px;
-    height:100px;
-    padding: 50px;
-    border: 1px solid blueviolet;
-    margin: 5px;
-    box-sizing: border-box; 
 }
