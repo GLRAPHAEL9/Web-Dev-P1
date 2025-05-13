@@ -13,7 +13,7 @@ main {
 
 @font-face {
     src: url(assets/Raleway-VariableFont_wght);
-    font-family: Raleway;
+    font-family: Raleway; 
 }
 
 h1{
@@ -48,7 +48,8 @@ h1{
 }
 .item-1 { 
     padding-inline-end: 5px;
-    padding: 10px; 
+    padding: 10px;
+
 
 }
 .item-2{
