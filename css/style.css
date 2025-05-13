@@ -1,29 +1,50 @@
+/* Global Box Sizing */
 html {
     box-sizing: border-box;
-
 }
 *, *:before, *:after {
-  box-sizing: inherit;  
+    box-sizing: inherit;
 }
 
 main {
     box-sizing: content-box;
 }
 
-
+/* Font */
 @font-face {
     src: url(assets/Raleway-VariableFont_wght);
     font-family: Raleway; 
 }
 
-h1{
-    font-family:Raleway;
-    color: blue;
-
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
+h1 {
+    font-family: Raleway;
+    color: blue;
+}
 
-.logo1{
+* {
+    font-family: Raleway;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo1 {
     width: 200px;
     height: 100px; 
     padding: 5px;
@@ -31,13 +52,6 @@ h1{
     display: flex;
     position: relative;
     box-sizing: border-box;
-    
-}
-
-
-* {
-    font-family: Raleway;
-    text-align: center;
 }
 
 .container {
@@ -46,41 +60,43 @@ h1{
     padding: 40px;
     justify-content: right;
 }
-.item-1 { 
-    padding-inline-end: 5px;
-    padding: 10px;
 
-
-}
-.item-2{
-    padding-inline-start: 5px;
+.item-1, .item-2 {
     padding: 10px;
 }
 
-.item-1:hover{
+.item-1:hover, .item-2:hover {
     border-top: 1px solid blue;
-    
 }
 
-.item-2:hover{
-    border-top: 1px solid blue;
+/* Search Section */
+.search-section {
+    padding: 40px 20px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .input-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     padding: 10px;
     border-radius: 0.5rem;
     background: whitesmoke;
+    margin-bottom: 20px;
 }
 
-input{
+input {
     margin-left: 0.5rem;
     border: none;
-    outline:none;
+    outline: none;
     background: white;
+    flex: 1;
+    padding: 10px;
 }
 
 .fa-sharp {
@@ -88,63 +104,209 @@ input{
 }
 
 button {
-    width: 300px;
+    width: 120px;
     border: none;
     outline: none;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     background: rgb(75, 75, 248);
     color: white;
-    
+    cursor: pointer;
+    padding: 10px;
 }
 
+/* Filters Section */
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
 
+.filters-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
+.filters button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
 
+.filters button i {
+    color: #0065fc;
+}
 
+.filters button:hover {
+    background-color: #e6f0ff;
+}
 
+.filters button:hover {
+    background-color: #e6f0ff;
+    color: #0065fc; /* Ensures text is visible */
+}
 
+.info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.accommodations, .most-popular {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.accommodations {
+    flex: 3;
+}
+
+.most-popular {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cards, .activity-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card, .popular-card, .activity {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card img, .popular-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-info, .popular-card div {
+    padding: 10px 0;
+}
+
+.stars {
+    color: #0065fc;
+}
+
+.show-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0065fc;
+    text-decoration: none;
+}
+
+/* Activities */
+.activities {
+    padding: 40px 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.activity {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer div h4 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
-
-
 }
 
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
 
+    .input-wrapper {
+        flex-direction: column;
+        width: auto;
+    }
 
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media screen and (max-width: 768px)  {
-
-    
-
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width: 480px) {
-
-    .logo1{
+    .logo1 {
         float: none;    
-		display: block;    
-		text-align: center;    
-		width: 100%;
+        display: block;    
+        text-align: center;    
+        width: 100%;
         max-width: none;
     }
-    
-    .container{
+
+    .container {
         float: none;    
-		display:inline-flex;
+        display: inline-flex;
         text-align: center;
-
-    }
-    .item-1:hover {
-        border-bottom: 1px solid blue;
-        border-top: 0px;   
     }
 
-    .item-2:hover{
+    .item-1:hover, .item-2:hover {
         border-bottom: 1px solid blue;
         border-top: 0px;
     }
 
-    .input-wrapper{
+    .input-wrapper {
         float: none;
         display: inline-flex;
     }
@@ -156,11 +318,4 @@ button {
     .fa-sharp {
         visibility: visible;
     }
-
-
-} 
-    
-
-
-    
-    
+}
