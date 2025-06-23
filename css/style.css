@@ -142,12 +142,13 @@ button {
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color: white;
+    color: #333; /* Ensuring that the text is visible on white background */
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .filters button i {
@@ -156,11 +157,7 @@ button {
 
 .filters button:hover {
     background-color: #e6f0ff;
-}
-
-.filters button:hover {
-    background-color: #e6f0ff;
-    color: #0065fc; /* Ensures text is visible */
+    color: #0065fc; /* Ensuring that the text is visible */
 }
 
 .info {
