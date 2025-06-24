@@ -142,7 +142,7 @@ button {
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color: white;
-    color: #333; /* Ensuring that the text is visible on white background */
+    color: #333;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ button {
 
 .filters button:hover {
     background-color: #e6f0ff;
-    color: #0065fc; /* Ensuring that the text is visible */
+    color: #0065fc;
 }
 
 .info {
@@ -205,9 +205,19 @@ button {
     padding: 10px;
 }
 
-.card img, .popular-card img {
+/* ✅ Consistent image sizes for all cards */
+.card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popular-card img {
+    width: 100%;
+    max-width: 90px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -258,8 +268,7 @@ footer div h4 {
 }
 
 /* Media Queries */
-@media screen and (max-width: 992px) {
-}
+@media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
     .main-content {
@@ -285,15 +294,15 @@ footer div h4 {
 
 @media screen and (max-width: 480px) {
     .logo1 {
-        float: none;    
-        display: block;    
-        text-align: center;    
+        float: none;
+        display: block;
+        text-align: center;
         width: 100%;
         max-width: none;
     }
 
     .container {
-        float: none;    
+        float: none;
         display: inline-flex;
         text-align: center;
     }
