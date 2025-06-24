@@ -13,7 +13,7 @@ main {
 /* Font */
 @font-face {
     src: url(assets/Raleway-VariableFont_wght);
-    font-family: Raleway; 
+    font-family: Raleway;
 }
 
 body {
@@ -216,7 +216,7 @@ button {
 }
 
 .stars {
-    color: #0065fc;
+    color: #0668fc !important;
 }
 
 .show-more {
