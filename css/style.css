@@ -26,7 +26,7 @@ body {
 
 h1 {
     font-family: Raleway;
-    color: blue;
+    color: #0065fc;
 }
 
 * {
@@ -34,7 +34,6 @@ h1 {
     text-align: center;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -193,7 +192,7 @@ button {
 
 .cards, .activity-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
@@ -205,7 +204,7 @@ button {
     padding: 10px;
 }
 
-/* ✅ Consistent image sizes for all cards */
+
 .card img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -232,7 +231,7 @@ button {
 .show-more {
     display: inline-block;
     margin-top: 10px;
-    color: #0065fc;
+    color: #0a0a0a;
     text-decoration: none;
 }
 
@@ -325,3 +324,75 @@ footer div h4 {
         visibility: visible;
     }
 }
+
+.activity-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.activity-block {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.activity-column-large,
+.activity-column-small {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.activity-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.activity-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+
+.activity-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.activity-column-large .activity-card {
+  height: 100%;
+  min-height: 400px;
+}
+
+.activity-column-small .activity-card {
+  height: 190px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .activity-block {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-column-large .activity-card,
+  .activity-column-small .activity-card {
+    height: 200px;
+  }
+}
+
