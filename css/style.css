@@ -325,74 +325,68 @@ footer div h4 {
     }
 }
 
-.activity-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.activities {
+  padding: 40px 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.activity-block {
+.activities h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.activities-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
-
-.activity-column-large,
-.activity-column-small {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .activity-card {
-  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  border-radius: 12px;
-  height: 100%;
-  width: 100%;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
 }
 
 .activity-card img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
 }
 
-
-.activity-title {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 1rem;
+.activity-card p {
+  padding: 12px;
   margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
 }
 
-
-.activity-column-large .activity-card {
-  height: 100%;
-  min-height: 400px;
+/* Responsive layout */
+@media (max-width: 992px) {
+  .activities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.activity-column-small .activity-card {
-  height: 190px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .activity-block {
+@media (max-width: 600px) {
+  .activities-grid {
     grid-template-columns: 1fr;
   }
 
-  .activity-column-large .activity-card,
-  .activity-column-small .activity-card {
-    height: 200px;
+  .activity-card img {
+    height: 180px;
   }
 }
 
