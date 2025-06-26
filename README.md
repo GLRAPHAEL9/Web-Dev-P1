@@ -81,8 +81,7 @@ This project is fully responsive and mobile-friendly. Layout adjustments are mad
 
 To run this project locally:
 
-git clone https://github.com/GLRAPHAEL9/booki-holidays.git
-cd booki-holidays
+https://github.com/GLRAPHAEL9/Web-Dev-P1.git
 
 ---
 
