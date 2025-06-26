@@ -50,13 +50,14 @@ Booki is built using semantic **HTML5** and modern **CSS3**, with no JavaScript.
 
 ## Technologies Used
 
-| Tech              | Description                           |
-|-------------------|---------------------------------------|
-| **HTML5**         | Semantic markup and layout            |
-| **CSS3**          | Flexbox, Grid, media queries          |
-| **Font Awesome**  | Iconography for UI and filters        |
-| **Google Fonts**  | Typography using the Inter font       |
-| **Normalize.css** | Consistent base styling across browsers |
+| Technology         | Purpose                                    |
+|--------------------|--------------------------------------------|
+| HTML5              | Semantic markup and page structure         |
+| CSS3               | Styling with Flexbox, Grid, and animations |
+| Font Awesome       | Iconography for UI elements                |
+| Google Fonts       | Typography using 'Raleway' font            |
+| Normalize.css      | Cross-browser CSS normalization            | 
+
 
 ---
 
