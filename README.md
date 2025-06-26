@@ -2,7 +2,7 @@
 
 **Booki Holidays** is a clean, responsive front-end web interface that allows users to search for accommodations and discover exciting activities in Marseille, France. This project is designed as part of a static HTML/CSS development showcase, emphasizing accessibility, responsive design, and visual consistency.
 
-![Booki UI Preview] 
+![Booki UI Mock Up](assets\Images\logo\Screenshot (1).png)
 
 ---
 
