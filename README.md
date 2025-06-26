@@ -101,5 +101,11 @@ https://github.com/GLRAPHAEL9/Web-Dev-P1.git
 
 Gabriel Raphael
 
+---
 
+## 🧾 License
+
+This project is licensed under the **CC BY-NC-ND 4.0** License.  
+You may view, share, and reference it — but not modify or reuse it commercially.  
+🔗 https://creativecommons.org/licenses/by-nc-nd/4.0/
 
