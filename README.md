@@ -38,6 +38,16 @@ Booki is built using semantic **HTML5** and modern **CSS3**, with no JavaScript.
 
 ---
 
+## 🎨 Before & After Redesign
+
+| **Before** | **After** |
+|------------|-----------|
+| ![Before Screenshot](assets/Images/logo/Screenshot%20(1).png) | ![After Screenshot]() |
+
+> The original static layout was basic and lacked responsiveness. The redesigned version features a modern UI, hover effects, a structured grid system, smooth animations, and full mobile optimization.
+
+---
+
 ## Technologies Used
 
 | Tech              | Description                           |
